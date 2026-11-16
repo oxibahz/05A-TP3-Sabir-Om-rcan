@@ -1,40 +1,172 @@
-*{ box-sizing: border-box;}
+* {
+	box-sizing: border-box;
+}
 
 
 /* Typographies / Couleurs (exemples : titres, paragraphes, liens, etc.)
-========================================================================== */
+========================================================================== /
 
-body{
-	background-color: white;
-	
+body {
+    background-color: rgb(222, 225, 223);
+
 }
 
-/* Mise en page (positionnement)
-========================================================================== */
+/ Mise en page (positionnement)
+========================================================================== /
 
-.container{
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/ Header / Navigations / Footer 
+========================================================================== /
+
+
+
+/ Composantes générales (exemples : section, cartes, tableaux, etc.)
+========================================================================== /
+
+
+
+/ Formulaires
+========================================================================== /
+
+
+
+/ Règles spécifiques aux pages
+========================================================================== /
+/ À utiliser seulement si nécessaire. Les règles de styles devraient être 
+toujours le plus général / réutilisable possible*/
+.logo1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.emp1 ul {
+	display: flex;
+	gap: 40px;
+	list-style: none;
+}
+
+.back {
+	background-color: rgb(77, 255, 136, 0.843);
+	margin: 10px;
+}
+
+h1 {
+	padding: 10px
+}
+
+.container {
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
+.grid-4-col {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 15px;
 
-/* Header / Navigations / Footer 
-========================================================================== */
+	img {
+		width: 100%;
+		display: grid;
+		border-radius: 12px;
+
+	}
+}
+
+.label1 {
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(77, 255, 136, 0.843);
+	font-size: large;
+	font-family: sans-serif;
+	gap: 10px;
+	padding: 25px;
+	grid-column: 1 / 3;
+	grid-row: 2 / 4;
+	justify-content: center;
+	border-radius: 10px;
+	align-self: start;
+	height: 420px;
+	width: 100%;
+
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+textarea {
+	min-height: 300px;
+}
+
+input {
+	padding: 5px 10 px;
+}
+
+.label1 input[type="text"],
+.label1 input[type="password"] {
+	padding: 11px;
+	font-size: 13px;
+}
+
+label {
+	margin: 5px;
+}
+
+.connexion {
+	padding-left: 225px;
+	margin-bottom: 50px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.span-2x2 {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.gigachad {
+	grid-row: 3;
+	grid-column: 4;
+}
+
+.fille {
+	grid-row: 3;
+	grid-column: 3;
+}
+
+.ft1 {
+	display: flex;
+	gap: 40px;
+	list-style: none;
+	align-items: center;
+	gap: 8px;
+}
+
+.souvenir {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
 
 
-
-/* Composantes générales (exemples : section, cartes, tableaux, etc.)
-========================================================================== */
-
-
-
-/* Formulaires
-========================================================================== */
-
-
-
-/* Règles spécifiques aux pages
-========================================================================== */
-/* À utiliser seulement si nécessaire. Les règles de styles devraient être 
-toujours le plus général / réutilisable possible*/
+.signature {
+	text-align: center;
+	border-top: 1px solid black;
+	padding: 55px;
+	margin-top: 15px;
+	background-color: aliceblue;
+}
